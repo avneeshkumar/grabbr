@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+    
+    <!-- main tabs -->
+    
+   
+    <RelativeLayout 
+        	android:layout_below="@+id/main_tabs2"
+        	android:id="@+id/person_info"
+	        android:layout_width="match_parent"
+	        android:layout_height="88dp"
+	        android:background="@drawable/blueunderline">
+	        <ImageButton
+	            android:id="@+id/back_icon"
+		        android:layout_width="64dp"
+		        android:layout_height="64dp"
+		        android:layout_centerVertical="true"
+		        android:background="@drawable/blueback"
+		        android:layout_alignParentLeft="true"/>
+	        <com.grabbr.grabbrapp.customviews.RoundedImageView
+	            android:id="@+id/profile_pic"
+	            android:layout_width="64dp"
+	            android:layout_height="64dp"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="16dp"
+	            android:layout_marginRight="16dp"
+	            android:background="@drawable/me"
+	            android:src="@drawable/circle_mask"
+	            android:scaleType="fitCenter"
+	            android:layout_alignParentRight="true"/>
+	        <com.grabbr.grabbrapp.customviews.MyTextView 
+	            android:id="@+id/person_name"
+	            android:layout_toLeftOf="@+id/profile_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Avneesh Kumar"
+                android:textSize="22sp"
+                android:textColor="@color/textgrey"/>
+	        <!-- <com.grabbr.grabbrapp.customviews.MyTextView 
+	            android:layout_toLeftOf="@+id/profile_pic"
+	            android:layout_below="@+id/person_name"
+	            android:layout_alignRight="@+id/person_name"
+	            android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Mumbai"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"/> -->
+	 </RelativeLayout> 
+   
+     <!-- replace appropriately the scroll and linearlayout with listview -->
+
+	<LinearLayout
+	    android:layout_below="@+id/person_info"
+	    android:layout_above="@+id/message_sender"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" >
+
+	     <ListView
+	         android:layout_width="match_parent"
+	         android:id="@+id/list"
+	         android:layout_height="wrap_content"
+	         android:layout_margin="16dp"
+	         android:orientation="vertical">
+		     <!-- incoming message 1 -->
+	         
+	         
+	         <!-- incoming message 2 -->
+	         
+	         
+	         <!-- outgoing message 1 -->
+	         
+	         
+	         <!-- outgoing message 2 -->
+	         
+	     </ListView>
+	 </LinearLayout>
+     
+     <EditText 
+         android:id="@+id/message_sender"
+         android:layout_alignParentBottom="true"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:maxLines="4"
+         android:layout_marginLeft="0dp"
+         android:layout_marginRight="64dp"
+         android:layout_marginBottom="16dp"
+         android:layout_marginTop="16dp"
+         android:paddingLeft="16dp"
+         android:paddingBottom="8dp"
+         android:background="@drawable/editview_horn"
+         android:hint="Write to Raghav..."
+         android:textColorHint="@color/textgrey"/>
+
+     <ImageButton
+         android:id="@+id/send_button"
+         android:layout_width="50dp"
+         android:layout_height="50dp"
+         android:layout_alignBottom="@+id/message_sender"
+         android:layout_alignParentRight="true"
+         android:background="@drawable/sendblu" />
+
+</RelativeLayout>

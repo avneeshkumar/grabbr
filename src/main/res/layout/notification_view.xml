@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout 
+  	        android:layout_width="match_parent"
+			android:layout_height="80dp"
+			android:background="@android:color/white"
+			android:layout_marginBottom="2dp">	
+  	        <com.grabbr.grabbrapp.customviews.RoundedImageView
+	            android:id="@+id/profile_pic"
+	            android:layout_width="48dp"
+	            android:layout_height="48dp"
+	            android:layout_marginTop="16dp"
+	            android:layout_marginBottom="16dp"
+	            android:layout_marginLeft="24dp"
+	            android:layout_marginRight="24dp"
+	            android:background="@drawable/me"
+	            android:src="@drawable/circle_mask"
+	            android:scaleType="fitCenter"
+	            android:layout_alignParentLeft="true"/>
+  	        <com.grabbr.grabbrapp.customviews.MyTextView 
+  	            android:id="@+id/time_stamp"
+  	            android:layout_marginTop="8dp"
+  	            android:layout_marginRight="24dp"
+  	            android:layout_width="wrap_content"
+  	            android:layout_height="wrap_content"
+  	            android:text="41 minutes ago"
+  	            android:textSize="8sp"
+  	            android:textColor="@color/apptextlightgrey"
+  	            android:layout_alignParentRight="true"/>
+  	        <com.grabbr.grabbrapp.customviews.MyTextView 
+  	            android:id="@+id/content"
+  	            android:layout_alignRight="@+id/time_stamp"
+  	            android:layout_toRightOf="@+id/profile_pic"
+  	            android:layout_centerVertical="true"
+  	            android:gravity="left"
+  	            android:layout_width="fill_parent"
+  	            android:layout_height="wrap_content"
+  	            android:text="Raghav Mundhra is selling bicycle on Powai Group"  	            
+  	            android:textSize="14sp"
+  	            android:textColor="@color/textgrey"/>
+  	    </RelativeLayout>
+
+</LinearLayout>

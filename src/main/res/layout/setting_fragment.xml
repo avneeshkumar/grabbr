@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/createclasslayout"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:visibility="visible"
+	    android:background="@android:color/white">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+	    
+	    <!-- main tabs -->
+	   
+	    
+	    <RelativeLayout 
+        	android:layout_below="@+id/main_tabs2"
+        	android:id="@+id/person_info"
+	        android:layout_width="match_parent"
+	        android:layout_height="88dp">
+	        <ImageButton
+	            android:id="@+id/back_icon"
+		        android:layout_width="64dp"
+		        android:layout_height="64dp"
+		        android:layout_centerVertical="true"
+		        android:background="@drawable/blueback"
+		        android:layout_alignParentLeft="true"/>
+	     </RelativeLayout>
+	     <LinearLayout
+	         android:id ="@+id/notification_parent_ll"
+	         android:layout_width="match_parent"
+	         android:layout_height="wrap_content"
+	         android:orientation="vertical"
+	         android:layout_marginTop="32dp"
+	         android:background="@color/textgrey">
+	         
+	         <FrameLayout
+	            
+	             android:layout_width="match_parent"
+	             android:layout_height="wrap_content">
+	             <!-- change visibilities of elements to show what is needed -->
+	             <!-- note: use visibility values "visible" or "gone" while toggling -->
+	              <TextView 
+	                 android:id="@+id/notification_setting"
+		             android:layout_marginTop="0.5dp"
+		             android:layout_width="match_parent"
+		             android:layout_height="64dp"
+		             android:paddingRight="32dp"
+		             android:gravity="right|center_vertical"
+		             android:text="Notification Setting"
+		             android:textColor="@color/appblue"
+		             android:textSize="18sp"
+		             android:background="@android:color/white"
+		             android:visibility="visible"/>
+	              <LinearLayout 
+	                  android:layout_width="match_parent"
+	                  android:layout_height="wrap_content"
+	                  android:orientation="vertical"
+	                  android:id="@+id/notification_ll"
+	                  android:visibility="visible">
+	                  	<TextView 
+				             android:layout_width="match_parent"
+				             android:layout_height="64dp"
+				             android:paddingRight="32dp"
+				             android:gravity="right|center_vertical"
+				             android:text="Notification Setting"
+				             android:textColor="@android:color/white"
+				             android:textSize="18sp"
+				             android:background="@color/appblue"/>
+	                  	<RelativeLayout 
+	                  	    android:layout_width="match_parent"
+	                  	    android:layout_height="80dp"
+	                  	    android:background="@color/backgroundgrey2">
+	                  	  	<TextView 
+	                  	  	     android:layout_centerVertical="true"
+	                  	  	     android:layout_alignParentLeft="true"
+					             android:layout_width="wrap_content"
+					             android:layout_height="wrap_content"
+					             android:layout_marginLeft="32dp"
+					             android:text="Turn Notification"
+					             android:textColor="@color/appblue"
+					             android:textSize="18sp"/>
+	                  	  	<FrameLayout 
+	                  	  	    android:layout_width="96dp"
+	                  	  	    android:layout_height="32dp"
+	                  	  	    android:layout_alignParentRight="true"
+	                  	  	    android:layout_centerVertical="true"
+	                  	  	    android:layout_marginRight="32dp">
+								<ImageView
+								    android:layout_width="match_parent"
+								    android:layout_height="match_parent"
+								    android:background="@drawable/setting_on"
+								    android:visibility="visible"/>
+								<ImageView
+								    android:layout_width="match_parent"
+								    android:layout_height="match_parent"
+								    android:background="@drawable/setting_off"
+								    android:visibility="gone"/>	                  	  	    
+	                  	  	</FrameLayout>
+	                  	</RelativeLayout>
+	              </LinearLayout>
+	         </FrameLayout>
+	         
+	         <FrameLayout 
+	             android:layout_width="match_parent"
+	             android:layout_height="wrap_content">
+	              <TextView
+	                 android:id="@+id/changepasswd" 
+		             android:layout_marginTop="0.5dp"
+		             android:layout_width="match_parent"
+		             android:layout_height="64dp"
+		             android:paddingRight="32dp"
+		             android:gravity="right|center_vertical"
+		             android:text="Change Password"
+		             android:textColor="@color/appblue"
+		             android:textSize="18sp"
+		             android:background="@android:color/white"
+		             android:visibility="visible"/>
+	             <LinearLayout
+	                  android:id="@+id/changepassword_ll" 
+	                  android:layout_width="match_parent"
+	                  android:layout_height="wrap_content"
+	                  android:orientation="vertical"
+	                  android:visibility="visible">
+	                  	<TextView 
+				             android:layout_width="match_parent"
+				             android:layout_height="64dp"
+				             android:paddingRight="32dp"
+				             android:gravity="right|center_vertical"
+				             android:text="Change Password"
+				             android:textColor="@android:color/white"
+				             android:textSize="18sp"
+				             android:background="@color/appblue"/>
+	                  	<RelativeLayout
+				            android:layout_width="match_parent"
+				            android:layout_height="wrap_content"
+					        android:background="@color/backgroundgrey2"
+					        android:paddingTop="32dp"
+					        android:paddingBottom="32dp">
+				            <LinearLayout 
+					            android:id="@+id/titles"
+					            android:layout_marginLeft="16dp"
+					            android:layout_marginRight="16dp"
+					            android:layout_width="wrap_content"
+					            android:layout_height="wrap_content"
+					            android:orientation="vertical">
+					            <com.grabbr.grabbrapp.customviews.MyTextView 
+					                android:layout_width="wrap_content"
+					                android:layout_height="32dp"
+					                android:gravity="center"
+					                android:layout_gravity="right"
+					                android:text="Current Password"
+					                android:textSize="14sp"
+					                android:textColor="@color/appblue"/>
+					            <com.grabbr.grabbrapp.customviews.MyTextView 
+					                android:layout_width="wrap_content"
+					                android:layout_height="32dp"
+					                android:layout_marginTop="12dp"
+					                android:gravity="center"
+					                android:layout_gravity="right"
+					                android:text="New Password"
+					                android:textSize="14sp"
+					                android:textColor="@color/appblue"/>
+					            <com.grabbr.grabbrapp.customviews.MyTextView 
+					                android:layout_width="wrap_content"
+					                android:layout_height="32dp"
+					                android:layout_marginTop="12dp"
+					                android:gravity="center"
+					                android:layout_gravity="right"
+					                android:text="Confirm New Password"
+					                android:textSize="14sp"
+					                android:textColor="@color/appblue"/>
+					        </LinearLayout>
+					        <LinearLayout
+					            android:layout_toRightOf="@+id/titles"
+					            android:layout_marginRight="24dp"
+					            android:layout_width="fill_parent"
+					            android:layout_height="wrap_content"
+					            android:orientation="vertical">
+					            <EditText 
+					                    android:layout_centerInParent="true"
+							            android:layout_width="fill_parent"
+							            android:layout_height="32dp"
+							            android:paddingLeft="12dp"
+							            android:paddingRight="12dp"
+							            android:hint=""
+							            android:textSize="14sp"
+							            android:textColor="@color/apptextgrey"
+							            android:textColorHint="@color/textgrey"
+							            android:inputType="textPassword"
+							            android:background="@drawable/grey_border"
+							            android:singleLine="true"
+									    android:lines="1"
+									    android:maxLines="1"
+									    android:scrollHorizontally="true"
+									    android:ellipsize="end"/>
+					            <EditText 
+					                	android:layout_marginTop="12dp"
+					                    android:layout_centerInParent="true"
+							            android:layout_width="fill_parent"
+							            android:layout_height="32dp"
+							            android:paddingLeft="12dp"
+							            android:paddingRight="12dp"
+							            android:hint=""
+							            android:textSize="14sp"
+							            android:textColor="@color/apptextgrey"
+							            android:textColorHint="@color/textgrey"
+							            android:inputType="textPassword"
+							            android:background="@drawable/grey_border"
+							            android:singleLine="true"
+									    android:lines="1"
+									    android:maxLines="1"
+									    android:scrollHorizontally="true"
+									    android:ellipsize="end"/>
+					             <EditText 
+					                 	android:layout_marginTop="12dp"
+					                    android:layout_centerInParent="true"
+							            android:layout_width="fill_parent"
+							            android:layout_height="32dp"
+							            android:paddingLeft="12dp"
+							            android:paddingRight="12dp"
+							            android:hint=""
+							            android:textSize="14sp"
+							            android:textColor="@color/apptextgrey"
+							            android:textColorHint="@color/textgrey"
+							            android:inputType="textPassword"
+							            android:background="@drawable/grey_border"
+							            android:singleLine="true"
+									    android:lines="1"
+									    android:maxLines="1"
+									    android:scrollHorizontally="true"
+									    android:ellipsize="end"/>
+					        </LinearLayout>
+				       </RelativeLayout>
+	              </LinearLayout>
+	         </FrameLayout>
+	         
+<!-- 	         <FrameLayout  -->
+<!-- 	             android:layout_width="match_parent" -->
+<!-- 	             android:layout_height="wrap_content"> -->
+<!-- 	             <TextView  -->
+<!-- 		             android:layout_marginTop="0.5dp" -->
+<!-- 		             android:layout_width="match_parent" -->
+<!-- 		             android:layout_height="64dp" -->
+<!-- 		             android:paddingRight="32dp" -->
+<!-- 		             android:gravity="right|center_vertical" -->
+<!-- 		             android:text="Deactivate Account" -->
+<!-- 		             android:textColor="@color/appblue" -->
+<!-- 		             android:textSize="18sp" -->
+<!-- 		             android:background="@android:color/white" -->
+<!-- 		             android:visibility="gone"/> -->
+<!-- 	             <LinearLayout  -->
+<!-- 	                  android:layout_width="match_parent" -->
+<!-- 	                  android:layout_height="wrap_content" -->
+<!-- 	                  android:orientation="vertical" -->
+<!-- 	                  android:visibility="visible"> -->
+<!-- 	                  	<TextView -->
+<!-- 	                  	    android:id="@+id/deactivateaccount" -->
+<!-- 	                  	     android:layout_width="match_parent" -->
+<!-- 				             android:layout_height="64dp" -->
+<!-- 				             android:paddingRight="32dp" -->
+<!-- 				             android:gravity="right|center_vertical" -->
+<!-- 				             android:text="Deactivate Account" -->
+<!-- 				             android:textColor="@android:color/white" -->
+<!-- 				             android:textSize="18sp" -->
+<!-- 				             android:background="@color/appblue"/> -->
+<!-- 	                  	<RelativeLayout  -->
+<!-- 	                  	    android:layout_width="match_parent" -->
+<!-- 	                  	    android:layout_height="80dp" -->
+<!-- 	                  	    android:background="@color/backgroundgrey2" -->
+<!-- 	                  	     android:visibility="visible"> -->
+<!-- 	                  	  	<TextView  -->
+<!-- 	                  	  	     android:layout_centerVertical="true" -->
+<!-- 	                  	  	     android:layout_alignParentLeft="true" -->
+<!-- 					             android:layout_width="wrap_content" -->
+<!-- 					             android:layout_height="wrap_content" -->
+<!-- 					             android:layout_marginLeft="32dp" -->
+<!-- 					             android:text="Deactivate Account?" -->
+<!-- 					             android:textColor="@color/appblue" -->
+<!-- 					             android:textSize="18sp"/> -->
+<!-- 	                  	  	<FrameLayout  -->
+<!-- 	                  	  	    android:layout_width="96dp" -->
+<!-- 	                  	  	    android:layout_height="32dp" -->
+<!-- 	                  	  	    android:layout_alignParentRight="true" -->
+<!-- 	                  	  	    android:layout_centerVertical="true" -->
+<!-- 	                  	  	    android:layout_marginRight="32dp"> -->
+<!-- 								<ImageView -->
+<!-- 								    android:layout_width="match_parent" -->
+<!-- 								    android:layout_height="match_parent" -->
+<!-- 								    android:background="@drawable/setting_on" -->
+<!-- 								    android:visibility="gone"/> -->
+<!-- 								<ImageView -->
+<!-- 								    android:layout_width="match_parent" -->
+<!-- 								    android:layout_height="match_parent" -->
+<!-- 								    android:background="@drawable/setting_off" -->
+<!-- 								    android:visibility="visible"/>	                  	  	     -->
+<!-- 	                  	  	</FrameLayout> -->
+<!-- 	                  	</RelativeLayout> -->
+<!-- 	              </LinearLayout> -->
+<!-- 	         </FrameLayout> -->
+	         
+	         <FrameLayout 
+	             android:layout_width="match_parent"
+	             android:layout_height="wrap_content">
+		         <TextView 
+		             android:id="@+id/reportproblem"
+		             android:layout_marginTop="0.5dp"
+		             android:layout_width="match_parent"
+		             android:layout_height="64dp"
+		             android:paddingRight="32dp"
+		             android:gravity="right|center_vertical"
+		             android:text="Report a Problem"
+		             android:textColor="@color/appblue"
+		             android:textSize="18sp"
+		             android:background="@android:color/white"
+		             android:visibility="visible"/>
+		         <LinearLayout 
+	                  android:layout_width="match_parent"
+	                  android:layout_height="wrap_content"
+	                  android:orientation="vertical"
+	                  android:id="@+id/reportproblem_ll"
+	                  android:visibility="gone">
+	                  	<TextView 
+				             android:layout_width="match_parent"
+				             android:layout_height="64dp"
+				             android:paddingRight="32dp"
+				             android:gravity="right|center_vertical"
+				             android:text="Report a Problem"
+				             android:textColor="@android:color/white"
+				             android:textSize="18sp"
+				             android:background="@color/appblue"/>
+			         <RelativeLayout 
+			             android:layout_width="match_parent"
+			             android:layout_height="256dp"
+			             android:background="@color/backgroundgrey2"
+			             android:padding="32dp">
+		                  	<EditText 
+		                  	    android:layout_centerHorizontal="true"
+		                  	    android:layout_above="@+id/send_btn"
+		                  	    android:layout_marginBottom="8dp"
+					            android:layout_width="fill_parent"
+					            android:layout_height="fill_parent"
+					            android:padding="8dp"
+					            android:gravity="left|top"
+					            android:hint="Write Your Problem..."
+					            android:textSize="14sp"
+					            android:textColor="@color/apptextgrey"
+					            android:textColorHint="@color/appblue"
+					            android:background="@drawable/black_border"/>
+			             	<com.grabbr.grabbrapp.customviews.MyTextView
+			             	    android:id="@+id/send_btn"
+			             	    android:layout_alignParentRight="true"
+			             	    android:layout_alignParentBottom="true"
+					            android:layout_width="72dp"
+					            android:layout_height="42dp"
+					            android:text="Send"
+					            android:gravity="center"
+					            android:textSize="18sp"
+					            android:textStyle="normal"
+					            android:textColor="@color/appblue"
+					            android:background="@drawable/blue_button_border"
+					            android:layout_centerVertical="true"/>
+			         </RelativeLayout>
+			         </LinearLayout>
+		     </FrameLayout>
+	         <TextView
+	             android:id="@+id/signout" 
+	             android:layout_marginTop="0.5dp"
+	             android:layout_width="match_parent"
+	             android:layout_height="64dp"
+	             android:paddingRight="32dp"
+	             android:gravity="right|center_vertical"
+	             android:text="Sign Out"
+	             android:textColor="@color/appblue"
+	             android:textSize="18sp"
+	             android:background="@android:color/white"/>
+	     </LinearLayout>
+   </LinearLayout>
+</ScrollView>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+    
+    <!-- main tabs -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@android:color/white">
+        <ImageButton
+            android:id="@+id/profile_icon"
+	        android:layout_width="72dp"
+	        android:layout_height="match_parent"
+	        android:background="@color/appblue"
+	        android:src="@drawable/profile_icon"
+	        android:scaleType="fitCenter"
+	        android:layout_alignParentRight = "true"/>
+        <ImageButton
+            android:id="@+id/home_icon"
+            android:layout_toLeftOf = "@id/profile_icon"
+	        android:layout_width="72dp"
+	        android:layout_height="match_parent"
+	        android:background="@color/appblue"
+	        android:src="@drawable/home_icon"
+	        android:scaleType="fitCenter"/>
+        <com.grabbr.grabbrapp.customviews.MyTextView
+            android:layout_toLeftOf="@+id/home_icon"
+            android:id="@+id/discover_icon"
+            android:layout_width="fill_parent"
+	        android:layout_height="match_parent"
+	        android:layout_marginLeft="16dp"
+	        android:layout_marginRight="16dp"
+	        android:text="Discover"
+	        android:textSize="22sp"
+	        android:textStyle="normal"
+	        android:textColor="@color/appblue"
+	        android:gravity="center_horizontal|bottom"
+	        android:paddingBottom="8dp"
+	        android:background="@drawable/tab_underlined"/>
+    </RelativeLayout>
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+       
+       <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <!-- horizontal category tabs -->
+        <HorizontalScrollView 
+            android:id="@+id/category_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="64dp"
+            android:scrollbars="none">
+	        <LinearLayout 
+	            android:layout_width="wrap_content"
+            	android:layout_height="match_parent"
+	            android:orientation="horizontal"
+	            android:background="@color/appblue">
+	            <com.grabbr.grabbrapp.customviews.MyTextView 
+		              android:layout_width="wrap_content"
+		              android:layout_height="match_parent"
+		              android:id="@+id/forher"
+		              android:paddingLeft="32dp"
+		              android:paddingRight="32dp"
+		              android:gravity="center"
+		              android:text="For her"
+		              android:textSize="14sp"
+		              android:textColor="@color/appblue"
+		              android:background="@drawable/blue_tab_topdown"/>
+	            <com.grabbr.grabbrapp.customviews.MyTextView 
+		              android:layout_width="wrap_content"
+		              android:layout_height="match_parent"
+		              android:id="@+id/forhim"
+		              android:paddingLeft="32dp"
+		              android:paddingRight="32dp"
+		              android:gravity="center"
+		              android:text="For him"
+		              android:textSize="14sp"
+		              android:textColor="@android:color/white"
+		              android:background="@color/appblue"/>
+		        <com.grabbr.grabbrapp.customviews.MyTextView 
+		              android:layout_width="wrap_content"
+		              android:layout_height="match_parent"
+		              android:id="@+id/books"
+		              android:paddingLeft="32dp"
+		              android:paddingRight="32dp"
+		              android:gravity="center"
+		              android:text="Books"
+		              android:textSize="14sp"
+		              android:textColor="@android:color/white"
+		              android:background="@color/appblue"/>
+		        <com.grabbr.grabbrapp.customviews.MyTextView 
+		              android:layout_width="wrap_content"
+		              android:layout_height="match_parent"
+		              android:id="@+id/households"
+		              android:paddingLeft="32dp"
+		              android:paddingRight="32dp"
+		              android:gravity="center"
+		              android:text="Households"
+		              android:textSize="14sp"
+		              android:textColor="@android:color/white"
+		              android:background="@color/appblue"/>
+		        <com.grabbr.grabbrapp.customviews.MyTextView 
+		              android:layout_width="wrap_content"
+		              android:layout_height="match_parent"
+		              android:id="@+id/electronics"
+		              android:paddingLeft="32dp"
+		              android:paddingRight="32dp"
+		              android:gravity="center"
+		              android:text="Electronics"
+		              android:textSize="14sp"
+		              android:textColor="@android:color/white"
+		              android:background="@color/appblue"/>
+		        <com.grabbr.grabbrapp.customviews.MyTextView 
+		              android:layout_width="wrap_content"
+		              android:layout_height="match_parent"
+		              android:id="@+id/miscellaneous"
+		              android:paddingLeft="32dp"
+		              android:paddingRight="32dp"
+		              android:gravity="center"
+		              android:text="Miscellaneous"
+		              android:textSize="14sp"
+		              android:textColor="@android:color/white"
+		              android:background="@color/appblue"/>
+	        </LinearLayout>
+        </HorizontalScrollView>
+       
+	   <!-- photo grids -->
+	   
+	   <GridView 
+	       android:layout_below="@+id/category_tabs"
+	       android:id="@+id/sale_grids"
+	       android:layout_width="match_parent"
+	       android:layout_height="wrap_content"
+	       android:layout_margin="16dp"
+	       android:numColumns="auto_fit"
+	       android:verticalSpacing="16dp"
+	       android:gravity="center"
+	       android:horizontalSpacing="16dp"
+	       android:stretchMode="columnWidth"
+	       android:layout_centerHorizontal="true"
+	       android:scrollbars="none">
+	   </GridView>
+		       
+	   
+        </RelativeLayout>
+        <!-- search bar with suggestions and people icon -->
+        <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content">
+	        <ImageButton
+	            android:id="@+id/people_icon"
+		        android:layout_width="64dp"
+		        android:layout_height="64dp"
+		        android:background="@drawable/socialise"
+		        android:layout_alignParentRight="true"/>
+	        
+	        <!-- search bar -->
+	        <FrameLayout 
+	            android:id="@+id/search_bar"
+	            android:layout_toLeftOf="@+id/people_icon"
+	            android:layout_width="fill_parent"
+	            android:layout_height="48dp"
+	            android:layout_marginLeft="16dp">
+	            <TextView 
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:background="@drawable/blueunderline"/>
+	            <FrameLayout 
+	                android:layout_width="24dp"
+	                android:layout_height="24dp"
+	                android:layout_marginBottom="8dp"
+	                android:layout_gravity="right|bottom">
+	                <ImageButton
+	                    android:id="@+id/search_button"
+		                android:layout_width="match_parent"
+		                android:layout_height="match_parent"
+		                android:background="@drawable/search"
+		                android:visibility="visible"/>
+	                <ImageButton
+		                android:layout_width="match_parent"
+		                android:layout_height="match_parent"
+		                android:background="@drawable/blue_cross"
+		                android:visibility="invisible"/>
+	            </FrameLayout>
+	            <EditText 
+	                android:id="@+id/search_text"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:layout_marginRight="24dp"
+	                android:paddingLeft="8dp"
+	                android:gravity="bottom"
+	                android:paddingBottom="8dp"
+	                android:background="@android:color/transparent"
+	                android:textSize="18sp"
+	                android:hint="Search..."
+	                android:textColorHint="@color/appblue"
+	                android:textColor="@color/apptextgrey"
+	                android:singleLine="true"
+				    android:lines="1"
+				    android:maxLines="1"
+				    android:scrollHorizontally="true"
+				    android:ellipsize="end"/>
+	        </FrameLayout>
+	        <!-- for suggestions, convert the below linearlayout to listview and populate it with suggestions-->
+	        <!-- using visibility u can toggle suggestions visibility -->
+	        <LinearLayout 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/search_bar"
+	            android:layout_alignLeft="@+id/search_bar"
+	            android:layout_alignRight="@+id/search_bar"
+	            android:visibility="invisible"
+	            android:orientation="vertical">
+	            <!-- suggestion 1 -->
+	            <TextView 
+	                android:layout_width="match_parent"
+	                android:layout_height="32dp"
+	                android:paddingLeft="8dp"
+	                android:gravity="center_vertical|left"
+	                android:text="IIT Bombay"
+	                android:textSize="18sp"
+	                android:textColor="@color/appblue"
+	                android:background="@color/translucentwhite"/>
+	            
+	            <!-- suggestion 2 -->
+	            <TextView 
+	                android:layout_width="match_parent"
+	                android:layout_height="32dp"
+	                android:paddingLeft="8dp"
+	                android:gravity="center_vertical|left"
+	                android:text="IIT Books"
+	                android:textSize="18sp"
+	                android:textColor="@color/appblue"
+	                android:background="@color/translucentwhite"/>
+	            
+	            <!-- suggestion 3-->
+	            <TextView 
+	                android:layout_width="match_parent"
+	                android:layout_height="32dp"
+	                android:paddingLeft="8dp"
+	                android:gravity="center_vertical|left"
+	                android:text="IIT Delhi"
+	                android:textSize="18sp"
+	                android:textColor="@color/appblue"
+	                android:background="@color/translucentwhite"/>
+	        </LinearLayout>
+	    </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>
+
+<ImageButton
+    android:id="@+id/create_post"
+    android:layout_width="48dp"
+    android:layout_height="48dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_marginBottom="16dp"
+    android:layout_marginLeft="16dp"
+    android:background="@drawable/compose_icon" />
+
+</RelativeLayout>

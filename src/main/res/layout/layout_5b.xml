@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/createclasslayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    android:background="@android:color/white">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <!-- title bar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:id="@+id/back_rel_layout">
+        <ImageButton
+            android:id="@+id/back_icon"
+	        android:layout_width="72dp"
+	        android:layout_height="match_parent"
+	        android:background="@color/appblue"
+	        android:src="@drawable/back"
+	        android:scaleType="fitCenter"
+	        android:layout_alignParentLeft = "true"/>
+        <com.grabbr.grabbrapp.customviews.MyTextView
+            android:id="@+id/back_tv"
+            android:layout_toRightOf="@id/back_icon"
+            android:layout_width="fill_parent"
+	        android:layout_height="match_parent"
+	        android:background="@color/appblue"
+	        android:text="Sell Your Item"
+	        android:gravity="center_vertical"
+	        android:textSize="22sp"
+	        android:textStyle="normal"
+	        android:textColor="@android:color/white"/>
+    </RelativeLayout>
+    
+    <!-- add pictures bar -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:layout_weight="3">
+        <!-- add image 1 -->
+	        <LinearLayout
+			     android:layout_width="0dp"
+			     android:layout_height="wrap_content"
+			     android:layout_weight="1"
+			     android:layout_gravity="center"
+			     android:gravity="center">
+			     <FrameLayout 
+			     	android:layout_width="72dp"
+			      	android:layout_height="72dp">
+				      <ImageView 
+				          android:id="@+id/add_image1"
+				          android:layout_width="match_parent"
+				          android:layout_height="match_parent"
+				          android:src="@drawable/polygon_mountain"
+				          android:scaleType="fitXY"
+				          android:visibility="visible"/>
+				       <LinearLayout
+				           android:id="@+id/linearlayout1"
+					       android:layout_width="match_parent"
+					       android:layout_height="match_parent"
+					       android:background="@drawable/grey_border"
+					       android:gravity="center"
+					       android:orientation="vertical"
+					       android:visibility="visible">
+					       <ImageView 
+					           android:layout_width="12dp"
+					           android:layout_height="12dp"
+					           android:background="@drawable/plus"/>
+					       <com.grabbr.grabbrapp.customviews.MyTextView 
+					           android:layout_marginTop="8dp"
+					           android:layout_width="wrap_content"
+					           android:layout_height="wrap_content"
+					           android:text="Click to\nAdd Another"
+					           android:gravity="center"
+					           android:textSize="8sp"/>
+					       <com.grabbr.grabbrapp.customviews.MyTextView 
+					           android:layout_width="wrap_content"
+					           android:layout_height="wrap_content"
+					           android:text="Picture"
+					           android:textStyle="bold"
+					           android:textSize="12sp"/>
+				     </LinearLayout>
+			    </FrameLayout>
+		</LinearLayout>
+		
+	    <!-- add image 2 -->
+        <LinearLayout
+		     android:layout_width="0dp"
+		     android:layout_height="wrap_content"
+		     android:layout_weight="1"
+		     android:layout_gravity="center"
+		     android:gravity="center">
+		     <FrameLayout 
+		     	android:layout_width="72dp"
+		      	android:layout_height="72dp">
+			      <ImageView 
+			          android:id="@+id/add_image2"
+			          android:layout_width="match_parent"
+			          android:layout_height="match_parent"
+			          android:src="@drawable/polygon_mountain"
+			          android:scaleType="fitXY"
+			          />
+			       <LinearLayout
+			           android:id="@+id/linearlayout2"
+				       android:layout_width="match_parent"
+				       android:layout_height="match_parent"
+				       android:background="@drawable/grey_border"
+				       android:gravity="center"
+				       android:orientation="vertical"
+				       android:visibility="visible">
+				       <ImageView 
+				           android:layout_width="12dp"
+				           android:layout_height="12dp"
+				           android:background="@drawable/plus"/>
+				       <com.grabbr.grabbrapp.customviews.MyTextView 
+				           android:layout_marginTop="8dp"
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="Click to\nAdd Another"
+				           android:gravity="center"
+				           android:textSize="8sp"/>
+				       <com.grabbr.grabbrapp.customviews.MyTextView 
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="Picture"
+				           android:textStyle="bold"
+				           android:textSize="12sp"/>
+			     </LinearLayout>
+		    </FrameLayout>
+		</LinearLayout>
+		
+       <!-- add image 3 -->
+       <LinearLayout
+		     android:layout_width="0dp"
+		     android:layout_height="wrap_content"
+		     android:layout_weight="1"
+		     android:layout_gravity="center"
+		     android:gravity="center">
+		     <FrameLayout 
+		     	android:layout_width="72dp"
+		      	android:layout_height="72dp">
+			      <ImageView 
+			          android:id="@+id/add_image3"
+			          android:layout_width="match_parent"
+			          android:layout_height="match_parent"
+			          android:src="@drawable/polygon_mountain"
+			          android:scaleType="fitXY"/>
+			       <LinearLayout
+			           android:id="@+id/linearlayout3"
+				       android:layout_width="match_parent"
+				       android:layout_height="match_parent"
+				       android:background="@drawable/grey_border"
+				       android:gravity="center"
+				       android:orientation="vertical"
+				       android:visibility="visible">
+				       <ImageView 
+				           android:layout_width="12dp"
+				           android:layout_height="12dp"
+				           android:background="@drawable/plus"/>
+				       <com.grabbr.grabbrapp.customviews.MyTextView 
+				           android:layout_marginTop="8dp"
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="Click to\nAdd Another"
+				           android:gravity="center"
+				           android:textSize="8sp"/>
+				       <com.grabbr.grabbrapp.customviews.MyTextView 
+				           android:layout_width="wrap_content"
+				           android:layout_height="wrap_content"
+				           android:text="Picture"
+				           android:textStyle="bold"
+				           android:textSize="12sp"/>
+			     </LinearLayout>
+		    </FrameLayout>
+		</LinearLayout>
+    </LinearLayout>
+    
+    <!-- headline and description, tags -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/headline"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginRight="64dp"
+            android:background="@drawable/greyunderline"
+            android:hint="Add Headline"
+            android:minHeight="48dp"
+            android:textColorHint="@color/apptextlightgrey"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginRight="64dp"
+            android:background="@drawable/greyunderline"
+            android:hint="Add Description and Tags"
+            android:minHeight="48dp"
+            android:overScrollMode="always"
+            android:textColorHint="@color/apptextlightgrey"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+	        android:layout_marginTop="24dp">
+            <LinearLayout 
+	            android:id="@+id/titles"
+	            android:layout_marginLeft="32dp"
+	            android:layout_marginRight="16dp"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@android:color/white"
+	            android:orientation="vertical">
+	            <com.grabbr.grabbrapp.customviews.MyTextView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="32dp"
+	                android:gravity="center"
+	                android:layout_gravity="right"
+	                android:text="Category"
+	                android:textSize="18sp"
+	                android:textColor="@color/appgrey"/>
+	            <com.grabbr.grabbrapp.customviews.MyTextView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="32dp"
+	                android:layout_marginTop="12dp"
+	                android:gravity="center"
+	                android:layout_gravity="right"
+	                android:text="Price"
+	                android:textSize="18sp"
+	                android:textColor="@color/appgrey"/>
+	            <com.grabbr.grabbrapp.customviews.MyTextView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="32dp"
+	                android:layout_marginTop="12dp"
+	                android:gravity="center"
+	                android:layout_gravity="right"
+	                android:text="Post Privacy"
+	                android:textSize="18sp"
+	                android:textColor="@color/appgrey"/>
+	        </LinearLayout>
+	        <LinearLayout
+	            android:layout_toRightOf="@+id/titles"
+	            android:layout_marginRight="64dp"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:background="@android:color/white"
+	            android:orientation="vertical">
+
+	            <FrameLayout
+	                
+	                android:layout_width="fill_parent"
+	                android:layout_height="32dp" >
+
+		            <Spinner
+			            android:id="@+id/spinner1"
+			            android:layout_width="match_parent"
+			            android:layout_height="match_parent"
+			            android:dropDownWidth="fill_parent"
+			            android:spinnerMode="dropdown"
+			            android:entries="@array/category_items"
+			            android:background="@android:color/transparent"/>
+		            <TextView 
+		                android:layout_width="match_parent"
+			            android:layout_height="match_parent"
+			            android:background="@drawable/grey_spinner_border"/>
+		            <ImageView 
+		                android:layout_width="12dp"
+			            android:layout_height="12dp"
+			            android:background="@drawable/downarrow100"
+			            android:layout_gravity="center_vertical|right"
+			            android:layout_marginRight="8dp"
+			            />
+	            </FrameLayout>
+
+	            <FrameLayout
+	                
+	                android:layout_width="fill_parent"
+	                android:layout_height="32dp"
+	                android:layout_marginTop="12dp" >
+
+	            	<TextView 
+	            	    android:layout_width="fill_parent"
+			            android:layout_height="match_parent"
+			            android:gravity="center_vertical|right"
+			            android:paddingRight="8dp"
+			            android:text="in INR"
+			            android:textSize="10sp"
+			            android:textColor="@color/apptextlightgrey"
+			            android:background="@drawable/editview_horn"/>
+	            	<EditText
+	            	    android:id="@+id/price" 
+			            android:layout_width="fill_parent"
+			            android:layout_height="match_parent"
+			            android:paddingLeft="4dp"
+			            android:overScrollMode="never"
+			            android:hint=""
+			            android:textSize="14sp"
+			            android:textColor="@color/apptextgrey"
+			            android:background="@android:color/transparent"/>
+	            </FrameLayout>
+	            <LinearLayout 
+	               android:layout_width="fill_parent"
+		           android:layout_height="32dp"
+		           android:layout_marginTop="12dp"
+		           android:gravity="center_vertical">
+	               <com.grabbr.grabbrapp.customviews.MyTextView 
+	                   	android:id="@+id/public_textview"
+		                android:layout_width="64dp"
+		                android:layout_height="24dp"
+		                android:gravity="center"
+		                android:text="Public"
+		                android:textSize="12sp"
+		                android:textColor="@android:color/white"
+		                android:background="@color/appblue"
+		                
+		                />
+	               <com.grabbr.grabbrapp.customviews.MyTextView 
+	                   	android:id="@+id/follow_textview"
+	                    android:layout_marginLeft="4dp"
+		                android:layout_width="64dp"
+		                android:layout_height="24dp"
+		                android:gravity="center"
+		                android:text="Followers"
+		                android:textSize="12sp"
+		                android:textColor="@color/appblue"
+		                android:background="@drawable/blue_border"
+		                
+		                />
+	            </LinearLayout>
+	        </LinearLayout>
+       </RelativeLayout>
+
+       <com.grabbr.grabbrapp.customviews.MyTextView
+           android:id="@+id/submit_button"
+           android:layout_width="96dp"
+           android:layout_height="96dp"
+           android:layout_marginBottom="16dp"
+           android:layout_marginTop="32dp"
+           android:background="@drawable/blue_circle_border"
+           android:gravity="center"
+           android:text="P o s t"
+           android:textColor="@color/appblue"
+           android:textSize="26sp" />
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

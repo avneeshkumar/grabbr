@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/createclasslayout"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:visibility="visible"
+	    android:background="@android:color/white" -->
+	<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical">
+	    
+	    <!-- main tabs -->
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="64dp"
+	        android:background="@android:color/white">
+	        <ImageButton
+	            android:id="@+id/discover_icon"
+		        android:layout_width="72dp"
+		        android:layout_height="match_parent"
+		        android:background="@color/appblue"
+		        android:src="@drawable/discover_icon"
+		        android:scaleType="fitCenter"
+		        android:layout_alignParentLeft = "true"/>
+	        <ImageButton
+	            android:id="@+id/home_icon"
+	     		android:layout_toRightOf = "@id/discover_icon"
+		        android:layout_width="72dp"
+		        android:layout_height="match_parent"
+		        android:background="@color/appblue"
+		        android:src="@drawable/home_icon"
+		        android:scaleType="fitCenter"/>
+	        <com.grabbr.grabbrapp.customviews.MyTextView
+	            android:layout_toRightOf = "@id/home_icon"
+	            android:id="@+id/profile_tab"
+	            android:layout_width="fill_parent"
+		        android:layout_height="match_parent"
+		        android:layout_marginLeft="16dp"
+		        android:layout_marginRight="16dp"
+		        android:text="My Profile"
+		        android:textSize="22sp"
+		        android:textStyle="normal"
+		        android:textColor="@color/appblue"
+		        android:gravity="center_horizontal|bottom"
+		        android:paddingBottom="8dp"
+		        android:background="@drawable/tab_underlined"
+	     		android:layout_alignParentRight = "true"/>
+	    </RelativeLayout>
+
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="48dp"
+	        android:layout_marginTop="16dp"
+	        android:background="@color/appblue" >
+
+	        <com.grabbr.grabbrapp.customviews.MyTextView
+	            android:id="@+id/profile"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:background="@drawable/blue_tab_topdown"
+	            android:gravity="center"
+	            android:text="Profile"
+	            android:textColor="@color/appblue"
+	            android:textSize="12sp" />
+
+	        <com.grabbr.grabbrapp.customviews.MyTextView 
+	            android:id="@+id/sell_now"
+	              android:layout_width="wrap_content"
+	              android:layout_height="match_parent"
+	              android:layout_weight="1"
+	              android:gravity="center"
+	              android:text="Sell Now"
+	              android:textSize="12sp"
+	              android:textColor="@android:color/white"
+	              android:background="@color/appblue"/>
+
+	        <com.grabbr.grabbrapp.customviews.MyTextView
+	            android:id="@+id/inbox"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:background="@color/appblue"
+	            android:gravity="center"
+	            android:text="Inbox"
+	            android:textColor="@android:color/white"
+	            android:textSize="12sp" />
+
+	        <com.grabbr.grabbrapp.customviews.MyTextView
+	            android:id="@+id/notifications"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:background="@color/appblue"
+	            android:gravity="center"
+	            android:text="Notification"
+	            android:textColor="@android:color/white"
+	            android:textSize="12sp" />
+
+	    </LinearLayout>
+	    
+	   		
+		    <LinearLayout android:id="@+id/layoutToReplace" 
+			        android:layout_height="match_parent" 
+			        android:layout_width="match_parent" 
+			        android:orientation="vertical">
+		   	 </LinearLayout>
+	   
+	    
+	</LinearLayout>

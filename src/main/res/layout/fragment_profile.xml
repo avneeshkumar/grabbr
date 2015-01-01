@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@android:color/white">
+	        <com.grabbr.grabbrapp.customviews.RoundedImageView
+	            android:id="@+id/profile_pic"
+	            android:layout_centerHorizontal="true"
+	            android:layout_marginTop="32dp"
+	            android:layout_width="196dp"
+	            android:layout_height="196dp"
+	            android:background="@drawable/me"
+	            android:src="@drawable/circle_mask"
+	            android:scaleType="fitCenter"/>
+	        <ImageView 
+	            android:id="@+id/editprofile_icon"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginTop="8dp"
+	            android:layout_marginRight="8dp"
+	            android:layout_width="48dp"
+	            android:layout_height="48dp"
+	            android:background="@drawable/grey_border"
+	            android:src="@drawable/editprofile"
+	            android:scaleType="fitXY"/>
+
+	        <ImageView
+	            android:id="@+id/edit_settings_icon"
+	            android:layout_width="48dp"
+	            android:layout_height="48dp"
+	            android:layout_alignParentRight="true"
+	            android:layout_below="@+id/editprofile_icon"
+	            android:layout_marginRight="8dp"
+	            android:layout_marginTop="4dp"
+	            android:background="@drawable/grey_border"
+	            android:scaleType="fitXY"
+	            android:src="@drawable/setting" />
+
+	        <com.grabbr.grabbrapp.customviews.MyTextView 
+	              android:id="@+id/person_name"
+	              android:layout_below="@+id/profile_pic"
+	              android:layout_marginTop="16dp"
+	              android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:layout_centerHorizontal="true"
+	              android:text="Bhargav Chippada"
+	              android:textSize="32sp"
+	              android:textColor="@color/appblue"/>
+	        <com.grabbr.grabbrapp.customviews.MyTextView 
+	              android:id="@+id/person_city"
+	              android:layout_below="@+id/person_name"
+	              android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:layout_marginTop="4dp"
+	              android:layout_centerHorizontal="true"
+	              android:text="MUMBAI"
+	              android:textSize="22sp"
+	              android:textColor="@android:color/black"/>
+	        <com.grabbr.grabbrapp.customviews.MyTextView 
+	              android:id="@+id/person_descrip"
+	              android:layout_below="@+id/person_city"
+	              android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:layout_marginTop="4dp"
+	              android:layout_marginLeft="16dp"
+	              android:layout_marginRight="16dp"
+	              android:layout_centerHorizontal="true"
+	              android:text="Product Strategy, Design, Branding and User Experience"
+	              android:textSize="12sp"
+	              android:textColor="@color/apptextgrey"/>
+	        <LinearLayout 
+	            android:layout_below="@+id/person_descrip"
+	            android:layout_width="match_parent"
+	            android:layout_marginTop="8dp"
+	            android:layout_height="64dp"
+	            android:orientation="horizontal"
+	            android:weightSum="4"
+	            android:background="@color/appblue">
+	            <RelativeLayout 
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	                android:layout_weight="1">
+	                <LinearLayout 
+	                    android:id="@+id/selling"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:orientation="vertical"
+	                    android:layout_centerInParent="true"
+	                    android:gravity="center">
+	                    	<ImageView
+				              android:layout_width="16dp"
+				              android:layout_height="16dp"
+				              android:background="@drawable/grabbr"/>
+	                    	<com.grabbr.grabbrapp.customviews.MyTextView 
+				              android:layout_width="wrap_content"
+				              android:layout_height="wrap_content"
+				              android:layout_marginTop="4dp"
+				              android:layout_weight="1"
+				              android:gravity="center"
+				              android:text="Selling"
+				              android:textSize="10sp"
+				              android:textColor="@android:color/white"/>
+	                </LinearLayout>
+	            </RelativeLayout>
+	            <RelativeLayout 
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	                android:layout_weight="1">
+	                <LinearLayout 
+	                    android:id="@+id/favorites"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:orientation="vertical"
+	                    android:layout_centerInParent="true"
+	                    android:gravity="center">
+	                    	<ImageView
+				              android:layout_width="16dp"
+				              android:layout_height="16dp"
+				              android:background="@drawable/star"/>
+	                    	<com.grabbr.grabbrapp.customviews.MyTextView 
+				              android:layout_width="wrap_content"
+				              android:layout_height="wrap_content"
+				              android:layout_marginTop="4dp"
+				              android:layout_weight="1"
+				              android:gravity="center"
+				              android:text="Favorite"
+				              android:textSize="10sp"
+				              android:textColor="@android:color/white"/>
+	                </LinearLayout>
+	            </RelativeLayout>
+	            <RelativeLayout 
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	                android:layout_weight="1">
+	                <LinearLayout 
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:orientation="vertical"
+	                    android:id="@+id/following"
+	                    android:layout_centerInParent="true"
+	                    android:gravity="center">
+	                    	<com.grabbr.grabbrapp.customviews.MyTextView 
+	                    	  android:id="@+id/following_count"
+				              android:layout_width="wrap_content"
+				              android:layout_height="wrap_content"
+				              android:gravity="center"
+				              android:text="39"
+				              android:textSize="14sp"
+				              android:textColor="@android:color/white"/>
+	                    	<com.grabbr.grabbrapp.customviews.MyTextView 
+				              android:layout_width="wrap_content"
+				              android:layout_height="wrap_content"
+				              android:layout_marginTop="4dp"
+				              android:layout_weight="1"
+				              android:gravity="center"
+				              android:text="Following"
+				              android:textSize="10sp"
+				              android:textColor="@android:color/white"/>
+	                </LinearLayout>
+	            </RelativeLayout>
+	            <RelativeLayout 
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	                android:layout_weight="1">
+	                <LinearLayout 
+	                    android:id="@+id/followers"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:orientation="vertical"
+	                    android:layout_centerInParent="true"
+	                    android:gravity="center">
+	                    	<com.grabbr.grabbrapp.customviews.MyTextView 
+	                    	   android:id="@+id/followers_count"
+				              android:layout_width="wrap_content"
+				              android:layout_height="wrap_content"
+				              android:gravity="center"
+				              android:text="516"
+				              android:textSize="14sp"
+				              android:textColor="@android:color/white"/>
+	                    	<com.grabbr.grabbrapp.customviews.MyTextView 
+				              android:layout_width="wrap_content"
+				              android:layout_height="wrap_content"
+				              android:layout_marginTop="4dp"
+				              android:layout_weight="1"
+				              android:gravity="center"
+				              android:text="Followers"
+				              android:textSize="10sp"
+				              android:textColor="@android:color/white"/>
+	                </LinearLayout>
+	            </RelativeLayout>
+	        </LinearLayout>
+	    </RelativeLayout>
+	    
+			<LinearLayout  
+		        android:layout_height="fill_parent" 
+		        android:layout_width="match_parent" 
+		        android:orientation="vertical"
+		        android:background="@android:color/white">
+	        	 
+			 		<RelativeLayout
+			 		    android:id = "@+id/find_friends" 
+				        android:layout_width="match_parent"
+				        android:layout_height="wrap_content">
+				        <ImageButton
+				            android:id="@+id/back_icon"
+					        android:layout_width="64dp"
+					        android:layout_height="64dp"
+					        android:background="@drawable/blueback"
+					        android:layout_alignParentLeft="true"
+					        android:visibility="invisible"/>
+				        
+				        <!-- search bar -->
+				        <FrameLayout 
+				            android:id="@+id/search_bar"
+				            android:layout_toRightOf="@+id/back_icon"
+				            android:layout_width="fill_parent"
+				            android:layout_height="48dp"
+				            android:layout_marginLeft="16dp"
+				            android:layout_marginRight="24dp">
+				            <TextView 
+				                android:layout_width="match_parent"
+				                android:layout_height="match_parent"
+				                android:background="@drawable/blueunderline"/>
+				            <FrameLayout 
+				                android:layout_width="24dp"
+				                android:layout_height="24dp"
+				                android:layout_marginBottom="8dp"
+				                android:layout_gravity="right|bottom">
+				                <ImageButton
+					                android:layout_width="match_parent"
+					                android:layout_height="match_parent"
+					                android:background="@drawable/search"
+					                android:visibility="visible"/>
+				                <ImageButton
+					                android:layout_width="match_parent"
+					                android:layout_height="match_parent"
+					                android:background="@drawable/blue_cross"
+					                android:visibility="invisible"/>
+				            </FrameLayout>
+
+				            <EditText
+				                android:id="@+id/search_edit_text"
+				                android:layout_width="match_parent"
+				                android:layout_height="match_parent"
+				                android:layout_marginRight="24dp"
+				                android:background="@android:color/transparent"
+				                android:ellipsize="end"
+				                android:gravity="bottom"
+				                android:hint="Find Your Friends..."
+				                android:lines="1"
+				                android:maxLines="1"
+				                android:paddingBottom="8dp"
+				                android:paddingLeft="8dp"
+				                android:scrollHorizontally="true"
+				                android:singleLine="true"
+				                android:textColor="@color/apptextgrey"
+				                android:textColorHint="@color/appblue"
+				                android:textSize="18sp" />
+
+				        </FrameLayout>
+				        <!-- for suggestions, convert the below linearlayout to listview and populate it with suggestions-->
+				        <!-- using visibility u can toggle suggestions visibility -->
+
+				        <LinearLayout
+				            android:layout_width="match_parent"
+				            android:layout_height="match_parent"
+				            android:layout_below="@+id/search_bar" >
+
+				             <ListView
+						        android:id="@+id/list"
+						        android:layout_width="match_parent"
+						        android:layout_height="wrap_content"   
+						        >
+						</ListView>
+				        </LinearLayout>
+				       
+				    </RelativeLayout>
+	            	
+						    
+				
+    		</LinearLayout>
+    	
+</LinearLayout>

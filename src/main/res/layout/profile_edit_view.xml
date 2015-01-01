@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/createclasslayout"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:visibility="visible"
+	    android:background="@android:color/white">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+	    
+	    <RelativeLayout 
+        	android:layout_below="@+id/main_tabs2"
+        	android:id="@+id/person_info"
+	        android:layout_width="match_parent"
+	        android:layout_height="88dp">
+	        <ImageButton
+	            android:id="@+id/back_icon"
+		        android:layout_width="64dp"
+		        android:layout_height="64dp"
+		        android:layout_centerVertical="true"
+		        android:background="@drawable/blueback"
+		        android:layout_alignParentLeft="true"/>
+
+	        <com.grabbr.grabbrapp.customviews.MyTextView
+	            android:id="@+id/done"
+	            android:layout_width="wrap_content"
+	            android:layout_height="48dp"
+	            android:layout_alignParentRight="true"
+	            android:layout_centerVertical="true"
+	            android:layout_marginRight="24dp"
+	            android:background="@drawable/grey_button_border"
+	            android:gravity="center"
+	            android:paddingLeft="12dp"
+	            android:paddingRight="12dp"
+	            android:text="Done Editing"
+	            android:textColor="@color/appblue"
+	            android:textSize="18sp"
+	            android:textStyle="normal" />
+
+	     </RelativeLayout>
+	     <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+	        android:layout_marginTop="24dp">
+            <LinearLayout 
+	            android:id="@+id/titles"
+	            android:layout_marginLeft="32dp"
+	            android:layout_marginRight="16dp"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@android:color/white"
+	            android:orientation="vertical">
+	            <com.grabbr.grabbrapp.customviews.MyTextView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="48dp"
+	                android:gravity="center"
+	                android:layout_gravity="right"
+	                android:text="Full Name:"
+	                android:textSize="18sp"
+	                android:textColor="@color/appblue"/>
+	            <com.grabbr.grabbrapp.customviews.MyTextView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="48dp"
+	                android:layout_marginTop="12dp"
+	                android:gravity="center"
+	                android:layout_gravity="right"
+	                android:text="Current City:"
+	                android:textSize="18sp"
+	                android:textColor="@color/appblue"/>
+	            <com.grabbr.grabbrapp.customviews.MyTextView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="48dp"
+	                android:layout_marginTop="12dp"
+	                android:gravity="center"
+	                android:layout_gravity="right"
+	                android:text="About Me:"
+	                android:textSize="18sp"
+	                android:textColor="@color/appblue"/>
+	        </LinearLayout>
+	        <LinearLayout
+	            android:layout_toRightOf="@+id/titles"
+	            android:layout_marginRight="32dp"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:background="@android:color/white"
+	            android:orientation="vertical">
+	            <RelativeLayout 
+	                android:layout_width="fill_parent"
+	                android:layout_height="48dp">
+
+	                <EditText
+	                    android:id="@+id/full_name"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="32dp"
+	                    android:layout_centerInParent="true"
+	                    android:background="@drawable/grey_border"
+	                    android:ellipsize="end"
+	                    android:hint=""
+	                    android:lines="1"
+	                    android:maxLines="1"
+	                    android:paddingLeft="12dp"
+	                    android:paddingRight="12dp"
+	                    android:scrollHorizontally="true"
+	                    android:singleLine="true"
+	                    android:textColor="@color/apptextgrey"
+	                    android:textColorHint="@color/textgrey"
+	                    android:textSize="14sp" />
+
+	            </RelativeLayout>
+	            <RelativeLayout 
+	                android:layout_width="fill_parent"
+	                android:layout_height="48dp"
+	                android:layout_marginTop="12dp">
+
+	                <EditText
+	                    android:id="@+id/city"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="32dp"
+	                    android:layout_centerInParent="true"
+	                    android:background="@drawable/grey_border"
+	                    android:ellipsize="end"
+	                    android:hint=""
+	                    android:lines="1"
+	                    android:maxLines="1"
+	                    android:paddingLeft="12dp"
+	                    android:paddingRight="12dp"
+	                    android:scrollHorizontally="true"
+	                    android:singleLine="true"
+	                    android:textColor="@color/apptextgrey"
+	                    android:textColorHint="@color/textgrey"
+	                    android:textSize="14sp" />
+
+	            </RelativeLayout>
+	            <RelativeLayout 
+	                android:layout_width="fill_parent"
+	                android:layout_height="48dp"
+	                android:layout_marginTop="12dp">
+
+	                <EditText
+	                    android:id="@+id/aboutme"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:layout_centerInParent="true"
+	                    android:background="@drawable/grey_border"
+	                    android:gravity="left|top"
+	                    android:hint=""
+	                    android:minLines="5"
+	                    android:padding="12dp"
+	                    android:textColor="@color/apptextgrey"
+	                    android:textColorHint="@color/textgrey"
+	                    android:textSize="14sp" />
+
+	            </RelativeLayout>
+	           
+	            
+	        </LinearLayout>
+       </RelativeLayout>
+</LinearLayout>
+</ScrollView>

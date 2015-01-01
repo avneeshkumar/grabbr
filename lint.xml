@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <issue id="SuspiciousImport">
+        <ignore path="src/com/grabbr/grabbrapp/fragments/no_internet_fragment.java" />
+    </issue>
+</lint>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="0dp"
+     android:layout_height="wrap_content"
+     android:layout_weight="1"
+     android:layout_gravity="center"
+     android:gravity="center">
+     <FrameLayout 
+     	android:layout_width="72dp"
+      	android:layout_height="72dp">
+	       <ImageView 
+	          android:layout_width="match_parent"
+	          android:layout_height="match_parent"
+	          android:src="@drawable/polygon_mountain"
+	          android:scaleType="fitXY"
+	          android:visibility="invisible"/>
+	       <LinearLayout
+		       android:layout_width="match_parent"
+		       android:layout_height="match_parent"
+		       android:background="@drawable/grey_border"
+		       android:gravity="center"
+		       android:orientation="vertical"
+		       android:visibility="visible">
+		       <ImageView 
+		           android:id="@+id/add_image"
+		           android:layout_width="12dp"
+		           android:layout_height="12dp"
+		           android:background="@drawable/plus"/>
+		       <com.grabbr.grabbrapp.customviews.MyTextView 
+		           android:layout_marginTop="8dp"
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+		           android:text="Click to\nAdd Another"
+		           android:gravity="center"
+		           android:textSize="8sp"/>
+		       <com.grabbr.grabbrapp.customviews.MyTextView 
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+		           android:text="Picture"
+		           android:textStyle="bold"
+		           android:textSize="12sp"/>
+	     </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.grabbr.grabbrapp.customviews.MyTextView 
+        		android:id="@+id/message"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="left"
+	            android:layout_marginBottom="8dp"
+	            android:maxWidth="256dp"
+	            android:text="Hey\n\nI am  interested to trade your red cycle\n\nPlease let me know if it's still available."
+	            android:textSize="14sp"
+	            android:textColor="@color/textgrey"
+	            android:background="@drawable/incomingmsg_outline"/>
+
+</LinearLayout>

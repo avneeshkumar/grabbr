@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+	  	        android:layout_width="match_parent"
+				android:layout_height="80dp"
+				android:background="@android:color/white"
+				android:layout_marginBottom="2dp">	
+	  	        <ImageView
+		            android:id="@+id/profile_pic2"
+		            android:layout_width="48dp"
+		            android:layout_height="48dp"
+		            android:layout_marginTop="16dp"
+		            android:layout_marginBottom="16dp"
+		            android:layout_marginLeft="24dp"
+		            android:layout_marginRight="24dp"
+		            android:background="@drawable/me"
+		            android:src="@drawable/circle_mask"
+		            android:scaleType="fitCenter"
+		            android:layout_alignParentLeft="true"/>
+		  	     <FrameLayout 
+	  	        	
+		  	         android:id="@+id/buttons"
+		  	         android:layout_width="64dp"
+		  	         android:layout_height="24dp"
+		  	         android:layout_alignParentRight="true"
+		  	         android:layout_centerVertical="true"
+		  	         android:layout_marginRight="24dp">
+		  	         <com.grabbr.grabbrapp.customviews.MyTextView 
+		                android:layout_width="match_parent"
+		                android:layout_height="match_parent"
+		                android:gravity="center"
+		                android:text="Invite Now"
+		                android:textSize="12sp"
+		                android:textColor="@android:color/white"
+		                android:background="@color/appblue"
+		                android:visibility="invisible"/>
+		  	         <RelativeLayout
+		  	            android:layout_width="match_parent"
+		                android:layout_height="match_parent"
+			            android:background="@drawable/blue_border"
+			            android:visibility="visible"
+			            android:id="@+id/follow">
+		  	             <com.grabbr.grabbrapp.customviews.MyTextView 
+		  	                android:id="@+id/follow_text"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_centerVertical="true"
+			                android:layout_marginLeft="8dp"
+			                android:text="Follow"
+			                android:textSize="12sp"
+			                android:textColor="@color/appblue"
+			                android:background="@android:color/transparent"/>
+		  	            <ImageView 
+		  	                 android:id="@+id/follow_button"
+		  	                android:layout_toRightOf="@+id/follow_button"
+		  	                android:layout_marginLeft="4dp"
+		  	                android:layout_width="8dp"
+		  	                android:layout_height="8dp"
+		  	                android:layout_centerVertical="true"
+		  	                android:background="@drawable/blueplus"/>
+		  	         </RelativeLayout>
+		  	         
+		  	     </FrameLayout>
+
+	  	        <com.grabbr.grabbrapp.customviews.MyTextView
+	  	            android:id="@+id/name"
+	  	            android:layout_width="fill_parent"
+	  	            android:layout_height="wrap_content"
+	  	            android:layout_alignRight="@+id/buttons2"
+	  	            android:layout_centerVertical="true"
+	  	            android:layout_toRightOf="@+id/profile_pic2"
+	  	            android:background="@android:color/transparent"
+	  	            android:gravity="left"
+	  	            android:text="Raghav Mundhra"
+	  	            android:textColor="@color/appblue"
+	  	            android:textSize="12sp" />
+
+	  	    </RelativeLayout>
+	  	    
+	  	    
+
+      
+</LinearLayout>

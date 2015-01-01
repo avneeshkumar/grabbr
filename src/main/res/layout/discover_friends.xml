@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/createclasslayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    android:background="@android:color/white" xmlns:app="http://schemas.android.com/apk/res/com.grabbr.wireframes" >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <!-- main tabs -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@android:color/white">
+        <ImageButton
+            android:id="@+id/home_icon"
+            android:layout_toLeftOf = "@id/profile_icon"
+	        android:layout_width="72dp"
+	        android:layout_height="match_parent"
+	        android:background="@color/appblue"
+	        android:src="@drawable/home_icon"
+	        android:scaleType="fitCenter"/>
+        <ImageButton
+            android:id="@+id/profile_icon"
+	        android:layout_width="72dp"
+	        android:layout_height="match_parent"
+	        android:background="@color/appblue"
+	        android:src="@drawable/profile_icon"
+	        android:scaleType="fitCenter"
+	        android:layout_alignParentRight = "true"/>
+        <com.grabbr.grabbrapp.customviews.MyTextView
+            android:layout_toLeftOf="@+id/home_icon"
+            android:id="@+id/discover_icon"
+            android:layout_width="fill_parent"
+	        android:layout_height="match_parent"
+	        android:layout_marginLeft="16dp"
+	        android:layout_marginRight="16dp"
+	        android:text="Discover"
+	        android:textSize="22sp"
+	        android:textStyle="normal"
+	        android:textColor="@color/appblue"
+	        android:gravity="center_horizontal|bottom"
+	        android:paddingBottom="8dp"
+	        android:background="@drawable/tab_underlined"/>
+    </RelativeLayout>
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+        <!-- convert the below linearlayout to listview -->
+
+       
+            
+            <!-- friend 1 -->
+	 
+	  	    
+	  	    <!-- friend 2 -->
+	  	    
+        
+        <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content">
+	        <ImageButton
+	            android:id="@+id/back_icon"
+		        android:layout_width="64dp"
+		        android:layout_height="64dp"
+		        android:background="@drawable/blueback"
+		        android:layout_alignParentLeft="true"/>
+	        
+	        <!-- search bar -->
+	        <FrameLayout 
+	            android:id="@+id/search_bar"
+	            android:layout_toRightOf="@+id/back_icon"
+	            android:layout_width="fill_parent"
+	            android:layout_height="48dp"
+	            android:layout_marginLeft="16dp"
+	            android:layout_marginRight="24dp"
+	            >
+	            <TextView 
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:background="@drawable/blueunderline"/>
+	            <FrameLayout 
+	                android:layout_width="24dp"
+	                android:layout_height="24dp"
+	                android:layout_marginBottom="8dp"
+	                android:layout_gravity="right|bottom">
+	                <ImageButton
+	                    android:id="@+id/search_button"
+		                android:layout_width="match_parent"
+		                android:layout_height="match_parent"
+		                android:background="@drawable/search"
+		                android:visibility="visible"/>
+
+	                <ImageButton
+	                    android:id="@+id/cross_button"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="match_parent"
+	                    android:background="@drawable/blue_cross"
+	                    android:visibility="invisible" />
+
+	            </FrameLayout>
+	            <EditText 
+	                android:id="@+id/search_text"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:layout_marginRight="24dp"
+	                android:paddingLeft="8dp"
+	                android:gravity="bottom"
+	                android:paddingBottom="8dp"
+	                android:background="@android:color/transparent"
+	                android:textSize="18sp"
+	                android:hint="Find Your Friends..."
+	                android:textColorHint="@color/appblue"
+	                android:textColor="@color/apptextgrey"
+	                android:singleLine="true"
+				    android:lines="1"
+				    android:maxLines="1"
+				    android:scrollHorizontally="true"
+				    android:ellipsize="end"/>
+	        </FrameLayout>
+	        <!-- for suggestions, convert the below linearlayout to listview and populate it with suggestions-->
+	        <!-- using visibility u can toggle suggestions visibility -->
+	        <LinearLayout 
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_below="@+id/search_bar"
+	            android:visibility="visible"
+	            android:orientation="vertical"
+	            android:background="@android:color/white">
+	            <!-- suggestion 1 -->
+	             <ListView
+		            android:id="@+id/list"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:layout_marginTop="15dp"
+		            android:background="@android:color/white"
+		            android:orientation="vertical" ></ListView>
+	        </LinearLayout>
+	    </RelativeLayout>
+    </FrameLayout>
+    
+</LinearLayout>
+</LinearLayout>
